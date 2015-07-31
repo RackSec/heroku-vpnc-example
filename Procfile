@@ -1,1 +1,1 @@
-web: vpnc --gateway `IPSEC_GATEWAY` --id ``
+ping-vpn: start-vpn && ping $VPN_TARGET_IP && cat
