@@ -8,3 +8,5 @@ IPSec secret $IPSEC_GROUP_SECRET
 Xauth username $IPSEC_USERNAME
 Xauth password $IPSEC_PASSWORD
 EOF
+
+vpnc vpn.conf
