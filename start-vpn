@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+tee vpn.conf << EOF > /dev/null
+IPSec gateway $IPSEC_GATEWAY
+IPSec ID $IPSEC_GROUP_ID
+IKE Authmode psk
+IPSec secret $IPSEC_GROUP_SECRET
+Xauth username $IPSEC_USERNAME
+Xauth password $IPSEC_PASSWORD
+EOF
